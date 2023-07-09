@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "serverpingerfixer",
+  "version": "${version}",
+  "name": "Server Pinger Fixer",
+  "description": "Improves pinging speed of the multiplayer server list",
+  "authors": [
+    "JustAlittleWolf"
+  ],
+  "contact": {
+    "sources": "https://github.com/JustAlittleWolf/ServerPingerFixer"
+  },
+  "license": "MIT-License",
+  "icon": "assets/serverpingerfixer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": []
+  },
+  "mixins": [
+    "serverpingerfixer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  }
+}
