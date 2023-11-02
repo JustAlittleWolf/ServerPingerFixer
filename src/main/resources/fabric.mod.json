@@ -12,15 +12,12 @@
   },
   "license": "MIT-License",
   "icon": "assets/serverpingerfixer/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": []
-  },
+  "environment": "client",
   "mixins": [
     "serverpingerfixer.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.22",
+    "fabricloader": ">=0.14.0",
     "minecraft": ">=1.18",
     "java": ">=17"
   }
