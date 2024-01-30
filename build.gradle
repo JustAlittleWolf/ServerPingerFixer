@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.4-SNAPSHOT'
+    id 'fabric-loom' version '1.5-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -9,8 +9,6 @@ group = project.maven_group
 base {
     archivesName = project.archives_base_name
 }
-
-repositories {}
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -41,14 +39,4 @@ jar {
     from("LICENSE") {
         rename { "${it}_${project.base.archivesName.get()}" }
     }
-}
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-        }
-    }
-
-    repositories {}
 }
